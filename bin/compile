@@ -150,7 +150,7 @@ else
   fi
 fi
 
-topic "Compiling .NET application"
+topic "Compiling .NET application to $BUILD_DIR" 
 xbuild /property:Configuration=Release /property:OutDir=$BUILD_DIR/ $SLN
 
 if $MONO_FALLBACK; then
